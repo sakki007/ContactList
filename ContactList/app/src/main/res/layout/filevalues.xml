@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="name "
+        android:id="@+id/contactYeah"
+        android:layout_marginLeft="140dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="contact "
+        android:id="@+id/namesYeah"
+        android:textSize="14dp"
+        android:textStyle="italic"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="44dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="email "
+        android:id="@+id/emailYeah"
+        android:textSize="14dp"
+        android:textStyle="italic"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="58dp" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_marginLeft="15dp"
+        android:padding="10dp"
+        android:id="@+id/image1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/alex_action"
+        android:layout_alignParentStart="true" />
+
+
+
+</RelativeLayout>

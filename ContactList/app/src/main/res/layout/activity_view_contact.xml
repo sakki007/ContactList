@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_view_contact"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.saksham.contactlist.viewContact">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            app:srcCompat="@drawable/imageempty"
+            android:layout_marginTop="16dp"
+            android:id="@+id/imageView2"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+
+        <TextView
+            android:text="Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="85dp"
+            android:id="@+id/textView"
+            android:layout_below="@+id/imageView2"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:layout_alignParentStart="true" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/textView"
+            android:id="@+id/hey1"
+            android:layout_marginTop="8dp"
+            android:background="@android:color/darker_gray"/>
+
+        <TextView
+            android:text="Call Mobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/hey1"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="15dp"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:id="@+id/textView2" />
+
+        <TextView
+            android:text="8951128765"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:id="@+id/textView3"
+            android:layout_below="@+id/textView2"
+            android:textSize="16dp"
+            android:layout_alignParentStart="true" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/textView3"
+            android:id="@+id/hey2"
+            android:layout_marginTop="12dp"
+            android:background="@android:color/darker_gray"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="260dp"
+            android:onClick="callp"
+            app:backgroundTint="#FFFFFF"
+            android:src="@drawable/images8"
+            android:layout_below="@+id/textView" />
+
+        <TextView
+            android:text="Email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/hey2"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="15dp"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:id="@+id/textView22" />
+
+        <TextView
+            android:text="contactList@gmail.com"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:id="@+id/textView33"
+            android:layout_below="@+id/textView22"
+            android:textSize="16dp"
+            android:layout_alignParentStart="true" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/textView33"
+            android:id="@+id/hey22"
+            android:layout_marginTop="12dp"
+            android:background="@android:color/darker_gray"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="260dp"
+            android:onClick="emailp"
+            app:backgroundTint="#FFFFFF"
+            android:src="@drawable/images10"
+            android:layout_below="@+id/hey2"
+            />
+
+
+        <TextView
+            android:text="expiry time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:id="@+id/textView333"
+            android:layout_below="@+id/hey22"
+            android:textSize="16dp"
+            android:layout_alignParentStart="true" />
+
+
+        <TextView
+            android:text="description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:id="@+id/textView3333"
+            android:layout_below="@+id/textView333"
+            android:textSize="16dp"
+            android:layout_alignParentStart="true" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/textView3333"
+            android:id="@+id/hey222"
+            android:layout_marginTop="12dp"
+            android:background="@android:color/darker_gray"/>
+
+
+        <Button
+            android:text="DELETE"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/hey222"
+            android:layout_alignParentStart="true"
+            android:onClick="deleteContact"
+            android:id="@+id/button4" />
+
+    </RelativeLayout>
+</ScrollView>
+
+</RelativeLayout>
